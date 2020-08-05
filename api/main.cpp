@@ -73,13 +73,25 @@ json get_recorded(string solcast_api, string location_api, string address, int h
 int main() {
 
     string solcast_api = "Cy_svKl2MNHobcsBWczeH-6MQ6cp2N6N";//solcast API key
-    string location_api = "23e6edd3ccc7437b90c589fd7c9c6213"; //opencage API key
+    cout << "Please enter your solcast API:  " << endl << "\n";
+    cin >> solcast_api;//without space and separate with comma
+    cout << "\n";
 
-    int hours = 168; // it can be from 48 to 168 hours 
+    string location_api = "23e6edd3ccc7437b90c589fd7c9c6213"; //opencage API key
+    cout << "Please enter your opencage API:  " << endl << "\n";
+    cin >> location_api;//without space and separate with comma 
+    cout << "\n";
     
     string address;
-    //address = "17,goodyear,irvine";
+    address = "17,goodyear,irvine";
+    cout << "Please enter your address with comma and witouth space:  " << endl << "\n";
     cin >> address;//without space and separate with comma
+    cout << "\n";
+
+    int hours = 168; // it can be from 48 to 168 hours 
+    cout << "how many hours of data?  " << endl << "\n";
+    cin >> hours;
+    cout << "\n";
 
     json forecast = get_forecasting(solcast_api, location_api, address, hours);  //forecasted data 
 

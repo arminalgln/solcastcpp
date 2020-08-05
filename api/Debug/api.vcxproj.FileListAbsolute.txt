@@ -1,1 +1,2 @@
 C:\Users\hamed\source\repos\api\api\Debug\api.vcxproj.CopyComplete
+E:\github\solcastcpp\api\Debug\api.vcxproj.CopyComplete

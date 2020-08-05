@@ -35,3 +35,9 @@
 # folders
 **/Debug
 .vs/
+*Debug/
+*api/Debug
+Debug/
+*api/Debug/
+api/Debug
+api/Debug/

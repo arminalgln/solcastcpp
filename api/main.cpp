@@ -98,8 +98,9 @@ int main() {
     json recorded = get_recorded(solcast_api, location_api, address, hours);  //recorded data
 
 
+
     //just to look inside of the json file
-    for (const auto& item : recorded.items())
+    for (const auto& item : forecast.items())
     {
         cout << item.key() << "\n\n" << "%%%%%%%%%%%" << "\n\n";
         for (const auto& val : item.value().items())
